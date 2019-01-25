@@ -11,13 +11,14 @@
 </ion-header>
 
 <ion-content>
-    <ion-card>
-        <ion-img src="/assets/images/product.png"></ion-img>
+
+    <ion-card *ngFor="let produto of produtos"> 
+        <ion-img src="../../assets/images/produtos/{{ produto.foto }}"></ion-img>
         <ion-card-header>
-            <ion-card-title>Hello World</ion-card-title>
+            <ion-card-title>{{ produto.nome }}</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-            <p>The content for this card</p>
+            <p>{{ produto.descricao }}</p>
         </ion-card-content>
     </ion-card> 
 

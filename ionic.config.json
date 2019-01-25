@@ -1,5 +1,7 @@
 {
   "name": "Catalog",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
